@@ -2,7 +2,7 @@ import LandingPage from "./pages/LandingPage";
 
 const App = () => {
   return (
-    <div className="app-scale">
+    <div className="ui-scale">
       <LandingPage />
     </div>
   );

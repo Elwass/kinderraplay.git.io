@@ -18,8 +18,23 @@ body {
   box-sizing: border-box;
 }
 
-.app-scale {
-  transform: scale(0.67);
+.ui-scale {
+  --ui-scale: 0.67;
+  transform: scale(var(--ui-scale));
   transform-origin: top center;
-  width: 100%;
+  width: calc(100% / var(--ui-scale));
+  height: calc(100% / var(--ui-scale));
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .ui-scale {
+    --ui-scale: 0.85;
+  }
+}
+
+@media (max-width: 640px) {
+  .ui-scale {
+    --ui-scale: 1;
+  }
 }
