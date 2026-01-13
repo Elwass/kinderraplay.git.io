@@ -15,7 +15,7 @@ const Hero = () => {
               <button
                 type="button"
                 aria-label="Previous announcement"
-                className="absolute left-[-60px] flex h-[36px] w-[36px] items-center justify-center opacity-[0.95] transition hover:opacity-100"
+                className="absolute left-[-60px] flex h-[36px] w-[36px] items-center justify-center text-[#F3E6D8] opacity-100 transition hover:text-[#EADCCB]"
               >
                 <svg
                   className="h-[28px] w-[28px]"
@@ -25,7 +25,7 @@ const Hero = () => {
                 >
                   <path
                     d="M15 6L9 12L15 18"
-                    stroke="#FFFFFF"
+                    stroke="currentColor"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -60,17 +60,25 @@ const Hero = () => {
                   <span className="uppercase"> &amp; STORY BOOK PLAYDATE ON </span>
                   <span className="font-semibold uppercase">JANUARY 17 &amp; 24!</span>
                 </span>
-                <Button
-                  variant="outline"
-                  className="ml-[16px] h-[28px] rounded-[999px] bg-[#FFFFFF] px-[16px] text-[10px] font-semibold uppercase leading-[12px]"
+                <svg
+                  className="ml-[6px] h-[12px] w-[12px]"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  Register
-                </Button>
+                  <path
+                    d="M4 2L8 6L4 10"
+                    stroke="#F6B88F"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </div>
               <button
                 type="button"
                 aria-label="Next announcement"
-                className="absolute right-[-60px] flex h-[36px] w-[36px] items-center justify-center opacity-[0.95] transition hover:opacity-100"
+                className="absolute right-[-60px] flex h-[36px] w-[36px] items-center justify-center text-[#F3E6D8] opacity-100 transition hover:text-[#EADCCB]"
               >
                 <svg
                   className="h-[28px] w-[28px]"
@@ -80,7 +88,7 @@ const Hero = () => {
                 >
                   <path
                     d="M9 6L15 12L9 18"
-                    stroke="#FFFFFF"
+                    stroke="currentColor"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -89,7 +97,26 @@ const Hero = () => {
               </button>
             </div>
 
-            <div className="h-[64px] w-[92px]" />
+            <button
+              type="button"
+              className="mt-[16px] inline-flex h-[40px] items-center gap-[10px] rounded-[999px] border-[3px] border-text bg-[#F6EFE7] px-[18px] text-[12px] font-semibold uppercase leading-[14px] text-text shadow-[0_6px_14px_rgba(111,95,82,0.15)]"
+            >
+              Register
+              <svg
+                className="h-[12px] w-[12px]"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 6H10M6 2L10 6L6 10"
+                  stroke="#6F5F52"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
           </div>
 
           <h1 className="mt-[72px] text-[52px] font-bold leading-[60px]">
