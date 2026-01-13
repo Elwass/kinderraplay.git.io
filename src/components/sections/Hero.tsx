@@ -2,65 +2,83 @@ import Button from "../ui/Button";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-beige px-6 pb-16 pt-10 md:px-16">
-      <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-        <div className="space-y-6">
-          <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 text-xs font-medium text-primary">
-            <span className="h-2 w-2 rounded-full bg-primary" />
-            Kinderra Play Preschool
+    <section className="w-full bg-[#FFFFFF]">
+      <div className="relative mx-auto w-[1440px] overflow-hidden">
+        <div className="h-[900px] w-full bg-[#EDE5DD]" />
+        <div className="pointer-events-none absolute inset-0 bg-[rgba(255,255,255,0.60)]" />
+
+        <div className="absolute inset-0 flex flex-col items-center px-[120px] pt-[36px] text-center text-text">
+          <div className="flex w-full items-start justify-between">
+            <div className="mt-[18px] h-[64px] w-[92px] rounded-[16px] bg-[#FFFFFF]" />
+
+            <div className="flex items-center gap-[12px] rounded-[999px] bg-primary px-[18px] py-[10px] text-[#FFFFFF]">
+              <span className="text-[16px] leading-[20px]">🔔</span>
+              <span className="text-[12px] font-semibold uppercase leading-[16px] tracking-[0.8px]">
+                JOIN OUR TRIAL CLASS &amp; STORY BOOK PLAYDATE ON JANUARY 17 &amp; 24!
+              </span>
+              <span className="text-[16px] leading-[20px]">‹</span>
+              <span className="text-[16px] leading-[20px]">›</span>
+              <Button
+                variant="outline"
+                className="ml-[8px] h-[28px] rounded-[999px] bg-[#FFFFFF] px-[14px] text-[10px] font-semibold uppercase leading-[12px]"
+              >
+                Register
+              </Button>
+            </div>
+
+            <div className="h-[64px] w-[92px]" />
           </div>
-          <h1 className="text-4xl font-semibold leading-tight text-text md:text-5xl">
-            Tempat bermain yang menumbuhkan rasa ingin tahu dan karakter baik.
+
+          <h1 className="mt-[72px] text-[48px] font-semibold leading-[56px]">
+            Early Learning Center
           </h1>
-          <p className="max-w-lg text-base leading-relaxed text-text/80">
-            Program holistik untuk anak usia dini dengan pendekatan bermain, eksplorasi,
-            dan kebiasaan harian yang terstruktur agar anak tumbuh percaya diri, mandiri,
-            dan ceria.
+          <h2 className="mt-[8px] text-[24px] font-medium leading-[32px]">
+            Play - Learn - Grow
+          </h2>
+
+          <p className="mt-[20px] max-w-[760px] text-[14px] leading-[22px]">
+            Kinderra Play, a premium early learning center supporting the development
+            of confident, independent, and communicative children through guided play,
+            discovery, and joy.
           </p>
-          <div className="flex flex-wrap gap-4">
-            <Button>Daftar Kunjungan</Button>
-            <Button variant="secondary">Lihat Program</Button>
+          <p className="mt-[12px] max-w-[760px] text-[14px] leading-[22px]">
+            Inspired by the Australian Early Years Learning Framework, Kinderra Play
+            delivers a calm, intentional, and professionally designed and structured
+            learning experience—where play is purposeful and every day builds clear
+            progress.
+          </p>
+
+          <div className="mt-[28px] flex items-center justify-center gap-[16px]">
+            <Button
+              variant="primary"
+              className="h-[48px] rounded-[999px] px-[24px] text-[14px] leading-[18px]"
+            >
+              Register for a Trial Class
+            </Button>
+            <Button
+              variant="outline"
+              className="h-[48px] rounded-[999px] px-[24px] text-[14px] leading-[18px]"
+            >
+              Get Enrollment Information
+            </Button>
           </div>
-          <div className="grid gap-4 pt-6 sm:grid-cols-2">
-            <div className="rounded-2xl bg-white/80 p-4 shadow-sm">
-              <p className="text-2xl font-semibold text-text">12+</p>
-              <p className="text-sm text-text/70">Aktivitas mingguan yang variatif</p>
+
+          <div className="mt-[64px] flex items-center justify-center gap-[32px] text-left">
+            <div className="flex flex-col items-start gap-[6px]">
+              <span className="text-[18px] font-semibold leading-[22px]">1-5 y.o</span>
+              <span className="text-[12px] leading-[16px]">Age</span>
             </div>
-            <div className="rounded-2xl bg-white/80 p-4 shadow-sm">
-              <p className="text-2xl font-semibold text-text">1:6</p>
-              <p className="text-sm text-text/70">Rasio guru dan anak</p>
+            <div className="h-[36px] w-[1px] bg-[#D9CFC6]" />
+            <div className="flex flex-col items-start gap-[6px]">
+              <span className="text-[18px] font-semibold leading-[22px]">Bilingual</span>
+              <span className="text-[12px] leading-[16px]">Language</span>
             </div>
-          </div>
-        </div>
-        <div className="relative">
-          <div className="absolute -right-6 -top-6 h-32 w-32 rounded-full bg-blue/70" />
-          <div className="absolute -left-6 bottom-4 h-24 w-24 rounded-full bg-primary/30" />
-          <div className="relative rounded-[40px] bg-white p-6 shadow-[0_25px_60px_rgba(111,95,82,0.15)]">
-            <div className="space-y-4 rounded-[32px] bg-[#FFF9F3] p-6">
-              <div className="flex items-center justify-between">
-                <span className="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">
-                  Learning at Kinderra
-                </span>
-                <span className="text-xs text-text/70">Ages 2-6</span>
-              </div>
-              <h2 className="text-xl font-semibold text-text">
-                Guided play, mindful moments, and joyful discovery.
-              </h2>
-              <div className="grid gap-3">
-                {[
-                  "Sensory & art exploration",
-                  "Storytelling & literacy",
-                  "Motor skills & outdoor play",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-center gap-3 rounded-2xl bg-white px-4 py-3 text-sm text-text/80"
-                  >
-                    <span className="h-2 w-2 rounded-full bg-primary" />
-                    {item}
-                  </div>
-                ))}
-              </div>
+            <div className="h-[36px] w-[1px] bg-[#D9CFC6]" />
+            <div className="flex flex-col items-start gap-[6px]">
+              <span className="text-[18px] font-semibold leading-[22px]">
+                Full &amp; Half Day Programs
+              </span>
+              <span className="text-[12px] leading-[16px]">Program</span>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
-import LandingPageKinderra from "./pages/LandingPageKinderra";
+import LandingPage from "./pages/LandingPage";
 
 const App = () => {
-  return <LandingPageKinderra />;
+  return <LandingPage />;
 };
 
 export default App;
