@@ -11,13 +11,19 @@
 
 html,
 body {
-  height: auto;
-  overflow-y: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 body {
-  margin: 0;
-  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100%;
 }
 
 * {
@@ -40,7 +46,7 @@ body {
   .ui-scale {
     transform: scale(var(--ui-scale));
     transform-origin: top center;
-    width: calc(100% / var(--ui-scale));
+    width: 100vw;
     min-height: calc(100vh / var(--ui-scale));
     margin: 0 auto;
     overflow-x: hidden;

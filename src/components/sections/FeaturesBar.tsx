@@ -102,8 +102,8 @@ const features = [
 
 const FeaturesBar = () => {
   return (
-    <section className="w-full bg-[#F6EFE7]">
-      <div className="mx-auto w-full max-w-[1440px] px-[48px] py-[20px]">
+    <section className="w-screen bg-[#F6EFE7]">
+      <div className="mx-auto w-screen px-[48px] py-[20px]">
         <div className="grid gap-[24px] text-[#6F5F52] md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature) => (
             <div key={feature.title} className="flex items-center gap-[12px]">
