@@ -11,42 +11,82 @@ const Hero = () => {
           <div className="flex w-full items-start justify-between">
             <div className="mt-[20px] h-[64px] w-[92px] rounded-[16px] bg-[#FFFFFF]" />
 
-            <div className="flex items-center gap-[12px] rounded-[999px] bg-primary px-[18px] py-[10px] text-[#FFFFFF]">
-              <svg
-                className="h-[16px] w-[16px]"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+            <div className="relative flex items-center justify-center">
+              <button
+                type="button"
+                aria-label="Previous announcement"
+                className="absolute left-[-60px] flex h-[36px] w-[36px] items-center justify-center opacity-[0.95] transition hover:opacity-100"
               >
-                <path
-                  d="M10 2.5C7.7 2.5 5.8 4.4 5.8 6.7V9.6C5.8 10 5.7 10.4 5.5 10.8L4.4 12.7C4.1 13.2 4.5 13.8 5.1 13.8H14.9C15.5 13.8 15.9 13.2 15.6 12.7L14.5 10.8C14.3 10.4 14.2 10 14.2 9.6V6.7C14.2 4.4 12.3 2.5 10 2.5Z"
-                  stroke="#FFFFFF"
-                  strokeWidth="1.4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M8.3 15.2C8.6 16.1 9.2 16.6 10 16.6C10.8 16.6 11.4 16.1 11.7 15.2"
-                  stroke="#FFFFFF"
-                  strokeWidth="1.4"
-                  strokeLinecap="round"
-                />
-              </svg>
-              <span className="text-[12px] leading-[16px] tracking-[0.8px]">
-                <span className="font-semibold uppercase">
-                  JOIN OUR TRIAL CLASS
+                <svg
+                  className="h-[28px] w-[28px]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 6L9 12L15 18"
+                    stroke="#FFFFFF"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+              <div className="flex items-center gap-[12px] rounded-[999px] bg-primary px-[18px] py-[10px] text-[#FFFFFF]">
+                <svg
+                  className="h-[16px] w-[16px]"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 2.5C7.7 2.5 5.8 4.4 5.8 6.7V9.6C5.8 10 5.7 10.4 5.5 10.8L4.4 12.7C4.1 13.2 4.5 13.8 5.1 13.8H14.9C15.5 13.8 15.9 13.2 15.6 12.7L14.5 10.8C14.3 10.4 14.2 10 14.2 9.6V6.7C14.2 4.4 12.3 2.5 10 2.5Z"
+                    stroke="#FFFFFF"
+                    strokeWidth="1.4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M8.3 15.2C8.6 16.1 9.2 16.6 10 16.6C10.8 16.6 11.4 16.1 11.7 15.2"
+                    stroke="#FFFFFF"
+                    strokeWidth="1.4"
+                    strokeLinecap="round"
+                  />
+                </svg>
+                <span className="text-[12px] leading-[16px] tracking-[0.8px]">
+                  <span className="font-semibold uppercase">
+                    JOIN OUR TRIAL CLASS
+                  </span>
+                  <span className="uppercase"> &amp; STORY BOOK PLAYDATE ON </span>
+                  <span className="font-semibold uppercase">JANUARY 17 &amp; 24!</span>
                 </span>
-                <span className="uppercase"> &amp; STORY BOOK PLAYDATE ON </span>
-                <span className="font-semibold uppercase">JANUARY 17 &amp; 24!</span>
-              </span>
-              <span className="text-[14px] leading-[16px]">{"<"}</span>
-              <span className="text-[14px] leading-[16px]">{">"}</span>
-              <Button
-                variant="outline"
-                className="ml-[16px] h-[28px] rounded-[999px] bg-[#FFFFFF] px-[16px] text-[10px] font-semibold uppercase leading-[12px]"
+                <Button
+                  variant="outline"
+                  className="ml-[16px] h-[28px] rounded-[999px] bg-[#FFFFFF] px-[16px] text-[10px] font-semibold uppercase leading-[12px]"
+                >
+                  Register
+                </Button>
+              </div>
+              <button
+                type="button"
+                aria-label="Next announcement"
+                className="absolute right-[-60px] flex h-[36px] w-[36px] items-center justify-center opacity-[0.95] transition hover:opacity-100"
               >
-                Register
-              </Button>
+                <svg
+                  className="h-[28px] w-[28px]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 6L15 12L9 18"
+                    stroke="#FFFFFF"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
             </div>
 
             <div className="h-[64px] w-[92px]" />
