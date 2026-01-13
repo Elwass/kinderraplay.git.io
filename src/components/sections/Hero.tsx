@@ -9,21 +9,21 @@ const Hero = () => {
         <div className="absolute inset-0 bg-[rgba(255,255,255,0.60)]" />
       </div>
 
-      <div className="relative mx-auto min-h-screen w-[1440px] px-[120px] pt-[56px] text-center text-text">
-        <div className="flex items-center">
-          <div className="flex w-[180px] justify-start">
+      <div className="relative mx-auto min-h-screen w-[1440px] px-[120px] pt-[48px] text-center text-text">
+        <div className="grid grid-cols-[240px_1fr_240px] items-center">
+          <div className="flex justify-start pt-[6px]">
             <img
               src={logo}
               alt="Kinderra Play"
-              className="h-[96px] w-[110px] object-contain"
+              className="h-[110px] w-[120px] object-contain"
             />
           </div>
 
-          <div className="relative flex flex-1 items-center justify-center">
+          <div className="relative flex items-center justify-center">
             <button
               type="button"
               aria-label="Previous announcement"
-              className="absolute left-[-70px] flex h-[44px] w-[44px] items-center justify-center text-primary opacity-100 transition hover:opacity-[0.85]"
+              className="absolute left-[-32px] flex h-[44px] w-[44px] items-center justify-center text-primary opacity-100 transition hover:opacity-[0.85]"
             >
               <svg
                 className="h-[34px] w-[34px]"
@@ -74,7 +74,7 @@ const Hero = () => {
             <button
               type="button"
               aria-label="Next announcement"
-              className="absolute right-[-70px] flex h-[44px] w-[44px] items-center justify-center text-primary opacity-100 transition hover:opacity-[0.85]"
+              className="absolute right-[-32px] flex h-[44px] w-[44px] items-center justify-center text-primary opacity-100 transition hover:opacity-[0.85]"
             >
               <svg
                 className="h-[34px] w-[34px]"
@@ -93,10 +93,10 @@ const Hero = () => {
             </button>
           </div>
 
-          <div className="flex w-[220px] justify-end">
+          <div className="flex justify-end">
             <button
               type="button"
-              className="inline-flex h-[46px] min-w-[210px] items-center justify-center gap-[12px] rounded-[999px] border-[2px] border-text bg-[#F6EFE7] px-[28px] text-[13px] font-semibold uppercase leading-[16px] text-text shadow-[0_4px_10px_rgba(111,95,82,0.12)]"
+              className="inline-flex h-[46px] min-w-[230px] items-center justify-center gap-[12px] rounded-[999px] border-[3px] border-text bg-[#F6EFE7] px-[30px] text-[13px] font-semibold uppercase leading-[16px] text-text shadow-[0_4px_10px_rgba(111,95,82,0.12)]"
             >
               Register
               <svg
