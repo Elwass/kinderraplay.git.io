@@ -38,5 +38,6 @@ body {
     width: calc(100% / var(--ui-scale));
     min-height: calc(100vh / var(--ui-scale));
     margin: 0 auto;
+    overflow-x: hidden;
   }
 }
